@@ -29,12 +29,12 @@ header a {
 
 header {
   background-color: #0c325a;
-  height: 75vh;
+  height: 600px;
   position: relative;
 }
 
 .container {
-  width: 80vw;
+  width: 80%;
   margin: 0 auto;
   position: relative;
 }
@@ -144,7 +144,7 @@ h1 {
   padding: 40px 0;
 }
 
-.box {
+.section2 .box {
   width: 33%;
   text-align: center;
   padding: 20px;
@@ -216,11 +216,29 @@ h1 {
   padding: 10px 0;
 }
 
-footer .box {
-  width: 50%;
+footer .box.left {
+  line-height: 150px;
+  font-size: 26px;
+  color: black;
+  font-weight: 700;
 }
 
-footer .box-title {
+footer .box.select {
+  width: 20%;
+  text-align: center;
   line-height: 150px;
-  vertical-align: middle;
+  color: #717477;
+  font-weight: 500;
 }
+
+footer .box.select select {
+  background-color: transparent;
+  width: 150px;
+  border: none;
+  border-bottom: 1px solid #717477;
+}
+
+footer .box.button {
+   width: 20%;
+   text-align: center;
+ }
