@@ -9,7 +9,7 @@ body {
   font-weight: 300;
 }
 
-a {
+header a {
   text-decoration: none;
 }
 
@@ -155,7 +155,7 @@ h1 {
   padding: 20px;
 }
 
-.box * {
+.section2 .box * {
   padding: 15px;
 }
 
@@ -172,7 +172,7 @@ h1 {
   left: 50%;
 }
 
-.box-title {
+.section2 .box-title {
   height: 100px;
   color: #7cd132;
   font-size: 26px;
@@ -180,7 +180,7 @@ h1 {
   position: relative;
 }
 
-.box-title::after {
+.section2 .box-title::after {
   background-color: #717477;
   bottom: 0;
   content: '';
@@ -192,8 +192,36 @@ h1 {
   width: 100px;
 }
 
-.box-text {
+.section2 .box-text, .section3 .box-text {
   line-height: 28px;
   color: #717477;
   font-weight: 500;
+}
+
+.section3 .container {
+  width: 70vw;
+}
+
+.section3 .box:first-child {
+  width: 60%;
+}
+
+.section3 .box:nth-child(2) {
+  width: 40%;
+  text-align: left;
+}
+
+.section3 .box:first-child img {
+  width: 90%;
+  padding: 20px;
+}
+
+.section3 .box-title {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.section3 .box:nth-child(2) * {
+  padding: 10px 0;
 }
