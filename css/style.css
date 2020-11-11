@@ -9,6 +9,20 @@ body {
   font-weight: 300;
 }
 
+a {
+  text-decoration: none;
+}
+
+float-l {
+  float: left;
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header {
   background-color: #0c325a;
   height: 75vh;
@@ -33,6 +47,23 @@ header {
   width: 100%;
 }
 
+.header-top {
+  padding: 15px;
+}
+
+.header-navbar > ul > li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 15px;
+}
+
+.header-navbar li a {
+  color: white;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+
 .header-text {
   width: 45%;
   position: absolute;
@@ -56,9 +87,36 @@ h1 {
   font-weight: 700;
 }
 
+.section1 {
+  position: relative;
+}
+
+.section1-content {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section1-content div:first-child {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.section1-content div:nth-child(2) {
+  color: #717477;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
 .section1, footer {
   background-color: #d3d3d3;
-  height: 200px;
+  height: 150px;
 }
 
 .section2, .section3 {
