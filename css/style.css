@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ .page-container {
+   width: 100vw;
+ }
+
+header {
+  background-color: #0c325a;
+  height: 500px;
+}
+
+.section1, footer {
+  background-color: #d3d3d3;
+  height: 200px;
+}
+
+.section2, .section3 {
+  background-color: white;
+  height: 400px;
+}
