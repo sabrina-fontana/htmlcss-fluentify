@@ -17,6 +17,10 @@ a {
   float: left;
 }
 
+.float-r {
+  float: right;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -49,6 +53,12 @@ header {
 
 .header-top {
   padding: 15px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.header-logo {
+  padding-right: 50px;
 }
 
 .header-navbar > ul > li {
@@ -59,8 +69,24 @@ header {
 
 .header-navbar li a {
   color: white;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 12px;
+}
+
+.header-navbar button {
+  font-size: 12px;
+  padding: 10px;
+  background-color: #7cd132;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+#login-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid white;
 }
 
 .header-text {
@@ -94,15 +120,17 @@ h1 {
   width: 100%;
   text-align: center;
   line-height: 40px;
+  padding: 15px 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #d3d3d3;
 }
 
 .section1-content div:first-child {
   color: black;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
 }
 
@@ -112,19 +140,22 @@ h1 {
   font-weight: 500;
 }
 
-.section1, footer {
-  background-color: #d3d3d3;
-  height: 20vh;
-}
-
 .section2, .section3 {
   background-color: white;
-  height: 50vh;
+}
+
+.section2 {
+  border-bottom: 1px solid black;
+  padding: 40px 0;
 }
 
 .box {
   width: 33%;
   text-align: center;
+  padding: 20px;
+}
+
+.box * {
   padding: 15px;
 }
 
@@ -142,10 +173,23 @@ h1 {
 }
 
 .box-title {
+  height: 100px;
   color: #7cd132;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 700;
-  padding: 15px 0;
+  position: relative;
+}
+
+.box-title::after {
+  background-color: #717477;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,0);
+  width: 100px;
 }
 
 .box-text {
